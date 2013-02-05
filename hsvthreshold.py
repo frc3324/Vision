@@ -187,11 +187,15 @@ def corners(pts, img):
 				y = sides[i][n][1]
 				
 				a = (y2 - y1) / (x2 - x1)
+				# Slope of the xy sides
 				b = -1
+				# Downward Direction
 				c = -a * x1 + y1
+				# Equation of distance between x and y
+			
 				
 				dist = math.fabs(a * x + b * y + c)/math.sqrt(a**2 + b**2)
-				
+				# maximum distance of a rectangle 
 				if dist >= 100:
 					ret = []
 				img[sides[i][n][1]][sides[i][n][0]] = np.array([(i) * 100 % 255, (i + 1) * 100 % 255, (i+2) * 100 % 255])
