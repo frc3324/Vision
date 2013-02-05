@@ -206,11 +206,11 @@ def corners(pts, img):
 	return ret
 
 def loop(processimg):
-	if not use_webcam:
-		ctx = freenect.init()
-		dev = freenect.open_device(ctx, 0)
-		freenect.set_tilt_degs(dev, 10)
-		freenect.close_device(dev)
+#	if not use_webcam:
+#		ctx = freenect.init()
+#		dev = freenect.open_device(ctx, 0)
+#		freenect.set_tilt_degs(dev, 10)
+#		freenect.close_device(dev)
 		
 	
 	cv2.namedWindow('processing')
